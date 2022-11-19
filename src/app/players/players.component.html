@@ -1,0 +1,8 @@
+<h2>Jugadores Seleccion Argentina</h2>
+    <ul class="list-group" *ngFor="let jugador of jugadores">
+        <li class="list-group-item" [ngClass]="{'estrella': jugador.estrella==true}">
+            {{jugador.nombre}}
+            <button (click)="showDetails(jugador)" type="button" style="margin-left:2em ;" class="btn btn-info">Detalles</button>
+        </li>
+    </ul>
+
