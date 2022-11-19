@@ -1,0 +1,15 @@
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Pais</th>
+        <th>Numero Veces Campeon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let champion of champions">
+        <td>{{champion.nombre}}</td>
+        <td>{{champion.numeroCopas}}</td>
+      </tr>
+    </tbody>
+  </table>

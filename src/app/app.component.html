@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Qatar 2022 WC</a>
+  <a class="navbar-brand" [routerLink]= "['/']">Qatar 2022 WC</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Plantel Argentina<span class="sr-only"></span></a>
-      <a class="nav-item nav-link" href="#">Estadios Qatar 2022</a>
-      <a class="nav-item nav-link" href="#">Ganadores World Cup</a>
+      <a class="nav-item nav-link active" [routerLink]= "['/']">Plantel Argentina<span class="sr-only"></span></a>
+      <a class="nav-item nav-link" [routerLink]= "['/stadiums']">Estadios Qatar 2022</a>
+      <a class="nav-item nav-link"  [routerLink]= "['/champions']">Ganadores World Cup</a>
     </div>
   </div>
 </nav>
 <div class="container">
-  <app-app-home></app-app-home>
+  <router-outlet></router-outlet>
 </div>
 
 <footer class="bg-dark text-center text-white">SeminarioAngular - 2022</footer>
