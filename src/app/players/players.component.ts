@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlayersInfoService } from '../players-details.service';
 import { Player } from './Player';
 @Component({
   selector: 'app-players',
@@ -73,13 +74,13 @@ export class PlayersComponent implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor(private playerDetails: PlayersInfoService) { }
 
   ngOnInit(): void {
   }
 
-  showDetails(jugador : Player):void {
-    
+  showDetails(jugador: Player):void {
+    this.playerDetails.showDetails(jugador);
   }
 
 }

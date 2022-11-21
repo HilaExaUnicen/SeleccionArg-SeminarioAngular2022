@@ -1,1 +1,10 @@
-<h3>Caracteristicas jugador</h3>
+<h1 class="tituloPlayersInfo">Caracteristicas jugador</h1>
+<div *ngFor="let jugador of jugadorObservable$ | async" [ngClass]="{'fondoEstrella': jugador.estrella==true}" >
+   <h2>{{jugador.nombre}}</h2>
+   <h5>Equipo: {{jugador.equipo}}</h5>
+   <p>------------------------------------------------</p>
+   <div>
+      <p>Posicion: {{jugador.posicion}}</p>
+      <p>Edad: {{jugador.edad}}</p>
+   </div>
+</div>

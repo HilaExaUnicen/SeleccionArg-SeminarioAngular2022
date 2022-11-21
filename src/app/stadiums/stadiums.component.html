@@ -8,11 +8,11 @@
         <th>Capacidad</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Lusail</td>
-        <td>80000</td>
+    <tbody >
+      <tr *ngFor="let stadium of stadiums">
+        <td></td>
+        <td>{{stadium.nombre}}</td>
+        <td>{{stadium.capacidad}}</td>
       </tr>
     </tbody>
   </table>

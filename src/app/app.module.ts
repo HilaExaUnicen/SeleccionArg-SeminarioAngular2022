@@ -16,7 +16,7 @@ import { ChampionsComponent } from './champions/champions.component';
     AppHomeComponent,
     PlayersDetailsComponent,
     StadiumsComponent,
-    ChampionsComponent
+    ChampionsComponent,
   ],
   imports: [
     BrowserModule,
