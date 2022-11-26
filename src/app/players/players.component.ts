@@ -24,6 +24,13 @@ export class PlayersComponent implements OnInit {
       estrella: true
     },
     {
+      nombre: 'Nicolas Otamendi',
+      posicion: 'Defensor',
+      equipo: 'Benfica',
+      edad: 34,
+      estrella: false
+    },
+    {
       nombre: 'Geronimo Rulli',
       posicion: 'Arquero',
       equipo: 'Villareal',
@@ -35,13 +42,6 @@ export class PlayersComponent implements OnInit {
       posicion: 'Defensor',
       equipo: 'Atletico Madrid',
       edad: 24,
-      estrella: false
-    },
-    {
-      nombre: 'Nicolas Otamendi',
-      posicion: 'Defensor',
-      equipo: 'Benfica',
-      edad: 34,
       estrella: false
     },
     {
@@ -71,6 +71,20 @@ export class PlayersComponent implements OnInit {
       equipo: 'Inter',
       edad: 25,
       estrella: true
+    },
+    {
+      nombre: 'Paulo Dybala',
+      posicion: 'Delantero',
+      equipo: 'Roma',
+      edad: 29,
+      estrella: true
+    },
+    {
+      nombre: 'Lisandro Martinez',
+      posicion: 'Defensor',
+      equipo: 'Manchester United',
+      edad: 24,
+      estrella: false
     },
   ]
 
